@@ -21,5 +21,8 @@ jobs:
       - name: Run tests
         run: go test -cover ./...
 
+      - name: Auto format
+        run: go fmt ./...
+
       - name: Style
         run: test -z $(go fmt ./...)
